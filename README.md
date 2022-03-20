@@ -13,15 +13,15 @@ Giả sử địa chỉ của c là 0x1234, địa chỉ của b là 0x5678. H�
 
 p3 = &d;
 
-cout << “*p3 = “ << *p3 << “, p3 = “ << p3 << endl;
+cout << “*p3 = “ << *p3 << “, p3 = “ << p3 << endl;  *p3 = B p3 = 0x5678
 
 p3 = p1;
 
-cout << “*p3 = “ << *p3 << “, p3 = “ << p3 << endl;
+cout << “*p3 = “ << *p3 << “, p3 = “ << p3 << endl; *p3 = A p3 = 0x1234
 
 *p1 = *p2;
 
-cout << “*p1 = “ << *p1 << “, p1 = “ << p1 << endl;
+cout << “*p1 = “ << *p1 << “, p1 = “ << p1 << endl; *p1 = B p1 = 0x1234
 
 
 2. Cho các lệnh sau.
@@ -46,10 +46,12 @@ k = 5;
 
 p = 5;
 
-*p = 5;
+*p = 5; Đáp án đúng
 
 3. Giải thích lỗi sau:
 
   char c = ‘C';
   
   double *p = &c;
+  
+  biến con trỏ không cùng kiểu dữ liệu
