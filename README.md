@@ -1,15 +1,26 @@
 # BT07
 1. Cho đoạn lệnh sau.
+2. 
 char c = ‘A', d = ‘B';
+
 char* p1 = &c;
+
 char* p2 = &d;
+
 char* p3;
+
 Giả sử địa chỉ của c là 0x1234, địa chỉ của b là 0x5678. Hỏi output của đoạn lệnh sau là gì?
+
 p3 = &d;
+
 cout << “*p3 = “ << *p3 << “, p3 = “ << p3 << endl;
+
 p3 = p1;
+
 cout << “*p3 = “ << *p3 << “, p3 = “ << p3 << endl;
+
 *p1 = *p2;
+
 cout << “*p1 = “ << *p1 << “, p1 = “ << p1 << endl;
 
 
